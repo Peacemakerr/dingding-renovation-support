@@ -1,60 +1,132 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>盯盯装修隐私政策</title>
+  <title>RenoTrace Privacy Policy</title>
   <style>
     :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; }
     body { margin: 0; color: #172126; background: #f7f9fa; line-height: 1.75; }
-    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 56px 0 80px; }
-    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }
+    main { width: min(760px, calc(100% - 40px)); margin: 0 auto; padding: 40px 0 80px; }
+    h1 { margin: 28px 0 8px; font-size: 32px; letter-spacing: 0; }
     h2 { margin: 36px 0 8px; font-size: 20px; letter-spacing: 0; }
     p, li { font-size: 16px; }
     .meta { color: #607078; margin-bottom: 32px; }
+    .language-picker { display: inline-flex; border: 1px solid #c9d3d7; border-radius: 7px; overflow: hidden; }
+    .language-picker button { min-width: 88px; min-height: 38px; padding: 6px 14px; border: 0; border-right: 1px solid #c9d3d7; color: #35545f; background: transparent; font: inherit; cursor: pointer; }
+    .language-picker button:last-child { border-right: 0; }
+    .language-picker button[aria-selected="true"] { color: #ffffff; background: #2f788e; }
     a { color: #2f788e; }
+    [hidden] { display: none; }
     @media (prefers-color-scheme: dark) {
       body { color: #eef4f5; background: #111718; }
       .meta { color: #9eafb5; }
+      .language-picker { border-color: #4b5c62; }
+      .language-picker button { color: #b7c8ce; border-color: #4b5c62; }
+      .language-picker button[aria-selected="true"] { color: #081316; background: #79bdd0; }
       a { color: #79bdd0; }
     }
   </style>
 </head>
 <body>
   <main>
-    <h1>盯盯装修隐私政策</h1>
-    <p class="meta">生效日期：2026 年 8 月 31 日</p>
+    <div class="language-picker" role="tablist" aria-label="Language">
+      <button type="button" role="tab" data-language="en" aria-selected="true">English</button>
+      <button type="button" role="tab" data-language="zh-Hans" aria-selected="false">中文</button>
+    </div>
 
-    <p>盯盯装修由 Pei Su（以下简称“我们”）提供。本政策说明盯盯装修 iOS App 如何处理你的信息。</p>
+    <section data-content="en">
+      <h1>RenoTrace Privacy Policy</h1>
+      <p class="meta">Effective date: August 31, 2026. Last updated: September 4, 2026.</p>
 
-    <h2>1. 当前版本不收集数据</h2>
-    <p>当前版本无需注册账号，不接入广告、用户追踪、行为分析、崩溃上报或云同步服务。我们不会通过 App 将你的房屋、任务、现场记录、问题、照片或变更信息上传到我们的服务器。</p>
+      <p>RenoTrace, shown as 盯盯装修 on Chinese-language devices, is provided by Pei Su ("we"). This policy explains how the RenoTrace iOS app handles information.</p>
 
-    <h2>2. 本地数据</h2>
-    <p>你创建的项目文字和照片由 App 保存在设备的应用数据目录中，用于在本机展示、编辑和生成进度摘要。你可以在 App 内删除任务、记录、问题或整个房屋项目。删除 App 会移除设备上的本地项目数据。</p>
+      <h2>1. The current version does not collect data</h2>
+      <p>The app requires no account and includes no advertising, user tracking, analytics, crash-reporting or cloud-sync service. The app does not send your properties, tasks, site records, issues, photos, changes or backup files to our servers.</p>
 
-    <h2>3. 系统权限</h2>
-    <ul>
-      <li>相机：仅在你主动点击“拍照”时，用于记录施工现场、验收结果或整改情况。</li>
-      <li>照片：通过 iOS 系统照片选择器，由你主动选择要导入的图片。</li>
-      <li>通知：仅在你主动开启到期提醒后，用于发送任务和问题期限提醒。</li>
-    </ul>
-    <p>拒绝这些权限不会影响浏览已有项目；照片在所有业务流程中均为可选项。</p>
+      <h2>2. Local project data</h2>
+      <p>Text and photos you add are stored in the app's local data directory so you can view and edit projects, receive local reminders, and generate reports or backups. You can delete individual content or an entire property in the app. Deleting the app removes its local project data.</p>
 
-    <h2>4. 主动分享</h2>
-    <p>当你使用“分享进度摘要”时，App 会把你看到的摘要交给 iOS 系统分享面板。只有你选择接收应用并确认后，内容才会离开盯盯装修；后续处理受接收应用的隐私政策约束。</p>
+      <h2>3. System permissions</h2>
+      <ul>
+        <li>Camera: used only after you tap Camera to document a site, checkpoint or repair.</li>
+        <li>Photos: selected by you through the iOS system photo picker. The app does not request unrestricted photo-library access.</li>
+        <li>Notifications: used only after you enable due-date reminders for tasks and issues.</li>
+      </ul>
+      <p>Refusing these permissions does not prevent you from viewing projects or using text records. Photos are optional throughout the app.</p>
 
-    <h2>5. 系统备份</h2>
-    <p>如果你开启了 iPhone 的设备备份或 iCloud 备份，系统备份可能包含本 App 的本地数据。该过程由你的系统设置和 Apple 的规则控制，不是盯盯装修主动上传。已有备份中的副本需通过 Apple 提供的备份管理方式处理。</p>
+      <h2>4. Sharing, reports and backup files</h2>
+      <p>When you create a PDF report or <code>.renotrace</code> project backup, the file is stored temporarily or in the location you choose and is handed to the iOS share sheet or document picker only after your action. Content leaves RenoTrace only when you choose another app, recipient or storage location. That destination's privacy policy then applies.</p>
 
-    <h2>6. 儿童隐私</h2>
-    <p>盯盯装修面向管理装修项目的用户，不以儿童为目标用户。由于当前版本不收集个人数据，我们也不会有意收集儿童个人信息。</p>
+      <h2>5. Device and iCloud Backup</h2>
+      <p>If iPhone Backup or iCloud Backup is enabled, Apple may include the app's local data in a system backup according to your device settings and Apple's policies. RenoTrace does not initiate that upload. Manage existing system backups using Apple's backup controls.</p>
 
-    <h2>7. 政策更新</h2>
-    <p>如果未来加入账号、云同步、统计或其他数据处理功能，我们会在功能启用前更新本政策，并按适用规则征得授权。</p>
+      <h2>6. Children's privacy</h2>
+      <p>RenoTrace is intended for people managing renovation projects and is not directed to children. The current version does not collect personal data.</p>
 
-    <h2>8. 联系我们</h2>
-    <p>如对本政策或本地数据处理有疑问，请联系：<a href="mailto:peisuu@outlook.com">peisuu@outlook.com</a>。</p>
+      <h2>7. Policy changes</h2>
+      <p>If a future version adds accounts, cloud sync, analytics or other data processing, we will update this policy before enabling that processing and request permission where required.</p>
+
+      <h2>8. Contact</h2>
+      <p>For questions about this policy or local data handling, email <a href="mailto:peisuu@outlook.com">peisuu@outlook.com</a>.</p>
+    </section>
+
+    <section data-content="zh-Hans" hidden>
+      <h1>盯盯装修隐私政策</h1>
+      <p class="meta">生效日期：2026 年 8 月 31 日。更新日期：2026 年 9 月 4 日。</p>
+
+      <p>RenoTrace 在中文设备上显示为“盯盯装修”，由 Pei Su（以下简称“我们”）提供。本政策说明本 iOS App 如何处理你的信息。</p>
+
+      <h2>1. 当前版本不收集数据</h2>
+      <p>当前版本无需注册账号，不接入广告、用户追踪、行为分析、崩溃上报或云同步服务。App 不会把你的房屋、任务、现场记录、问题、照片、变更或备份文件发送到我们的服务器。</p>
+
+      <h2>2. 本地项目数据</h2>
+      <p>你创建的文字和照片由 App 保存在设备的应用数据目录中，用于在本机展示和编辑项目、发送本地提醒，以及生成报告或备份。你可以在 App 内删除单项内容或整个房屋项目。删除 App 会移除设备上的本地项目数据。</p>
+
+      <h2>3. 系统权限</h2>
+      <ul>
+        <li>相机：仅在你主动点击“相机”后，用于记录施工现场、检查节点或整改情况。</li>
+        <li>照片：通过 iOS 系统照片选择器，由你主动选择要导入的图片。App 不请求不受限制的完整照片库访问权限。</li>
+        <li>通知：仅在你主动开启到期提醒后，用于发送任务和问题期限提醒。</li>
+      </ul>
+      <p>拒绝这些权限不会影响浏览项目或使用文字记录；照片在所有业务流程中均为可选项。</p>
+
+      <h2>4. 分享、报告和备份文件</h2>
+      <p>当你生成 PDF 报告或 <code>.renotrace</code> 项目备份时，文件会临时保存在本机或你选择的位置，并且只有在你主动操作后才会交给 iOS 系统分享面板或文件选择器。只有你选择接收应用、收件人或保存位置后，内容才会离开 RenoTrace；后续处理受对应服务的隐私政策约束。</p>
+
+      <h2>5. 设备与 iCloud 备份</h2>
+      <p>如果你开启了 iPhone 设备备份或 iCloud 备份，Apple 可能按照你的系统设置和 Apple 的规则备份本 App 的本地数据。RenoTrace 不会主动发起这类上传。已有系统备份可通过 Apple 提供的备份管理方式处理。</p>
+
+      <h2>6. 儿童隐私</h2>
+      <p>盯盯装修面向管理装修项目的用户，不以儿童为目标用户。当前版本不收集个人数据。</p>
+
+      <h2>7. 政策更新</h2>
+      <p>如果未来加入账号、云同步、统计或其他数据处理功能，我们会在相关处理启用前更新本政策，并按适用规则征得授权。</p>
+
+      <h2>8. 联系我们</h2>
+      <p>如对本政策或本地数据处理有疑问，请联系：<a href="mailto:peisuu@outlook.com">peisuu@outlook.com</a>。</p>
+    </section>
   </main>
+  <script>
+    const languageButtons = document.querySelectorAll("[data-language]");
+    const contentPanels = document.querySelectorAll("[data-content]");
+
+    function showLanguage(language) {
+      const useChinese = language === "zh-Hans";
+      document.documentElement.lang = useChinese ? "zh-CN" : "en";
+      document.title = useChinese ? "盯盯装修隐私政策" : "RenoTrace Privacy Policy";
+      languageButtons.forEach((button) => {
+        button.setAttribute("aria-selected", button.dataset.language === language ? "true" : "false");
+      });
+      contentPanels.forEach((panel) => {
+        panel.hidden = panel.dataset.content !== language;
+      });
+    }
+
+    languageButtons.forEach((button) => {
+      button.addEventListener("click", () => showLanguage(button.dataset.language));
+    });
+    showLanguage(navigator.language.toLowerCase().startsWith("zh") ? "zh-Hans" : "en");
+  </script>
 </body>
 </html>
